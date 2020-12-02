@@ -14,11 +14,11 @@ class ShowGraph extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text(title),
+      ),
       body: WebviewScaffold(
         url: url,
-        appBar: AppBar(
-          title: Text(title),
-        ),
         withZoom: true,
         withLocalStorage: true,
         hidden: true,
@@ -28,7 +28,7 @@ class ShowGraph extends StatelessWidget {
           ),
         ),
       ),
-      drawer: SideDrawer(),
+      endDrawer: SideDrawer(),
     );
   }
 }

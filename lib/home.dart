@@ -36,7 +36,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
         ),
       ),
-      drawer: SideDrawer(),
+      endDrawer: SideDrawer(),
     );
   }
 }
